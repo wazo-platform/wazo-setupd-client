@@ -1,0 +1,5 @@
+wazo-setupd-client (1.0-1) wazo-dev-stretch; urgency=medium
+
+  * Initial release.
+
+ -- Wazo Maintainers <dev@wazo.community>  Wed, 31 Oct 2018 15:34:18 -0400

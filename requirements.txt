@@ -1,0 +1,3 @@
+https://github.com/wazo-pbx/xivo-lib-rest-client/archive/master.zip
+requests==2.12.4
+stevedore==1.17.1

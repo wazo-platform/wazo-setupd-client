@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+export PYBUILD_NAME=wazo_setupd_client
+export PYBUILD_DESTDIR_python2=debian/wazo-setupd-client/
+export PYBUILD_DESTDIR_python3=debian/wazo-setupd-client-python3/
+export PYBUILD_DISABLE=test
+
+%:
+	dh $@ --with python2,python3 --buildsystem=pybuild
