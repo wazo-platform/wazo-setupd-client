@@ -6,7 +6,7 @@
 from xivo_lib_rest_client.client import BaseClient
 
 
-class WebhookdClient(BaseClient):
+class SetupdClient(BaseClient):
 
     namespace = 'wazo_setupd_client.commands'
 
@@ -15,7 +15,7 @@ class WebhookdClient(BaseClient):
                  port=9302,
                  version='1.0',
                  **kwargs):
-        super(WebhookdClient, self).__init__(
+        super(SetupdClient, self).__init__(
             host=host,
             port=port,
             version=version,
