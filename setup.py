@@ -23,6 +23,7 @@ setup(
     entry_points={
         'wazo_setupd_client.commands': [
             'config = wazo_setupd_client.commands.config:ConfigCommand',
+            'setup = wazo_setupd_client.commands.setup:SetupCommand',
             'status = wazo_setupd_client.commands.status:StatusCommand',
         ],
     }

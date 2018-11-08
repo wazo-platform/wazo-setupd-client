@@ -32,3 +32,7 @@ class SetupdServiceUnavailable(SetupdError):
 
 class InvalidSetupdError(Exception):
     pass
+
+
+class SetupdSetupError(SetupdError):
+    pass
