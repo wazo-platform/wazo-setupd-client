@@ -19,6 +19,32 @@ client = Client('localhost', verify_certificate=False, token=<auth-token>)
 client.config.get()
 ```
 
+### Get the current status of wazo-setupd
+
+```python
+client.status.get()
+```
+
+### Setup the Wazo engine
+
+```python
+body = {
+    'engine_entity_name': 'Wazo',
+    'engine_language': 'en_US',
+    'engine_number_start': '1000',
+    'engine_number_end': '1999',
+    'engine_password': 'secret',
+    'nestbox_host': 'nestbox.example.com',
+    'nestbox_port': 443,
+    'nestbox_service_id': 'nestbox-user',
+    'nestbox_service_key': 'secret',
+    'nestbox_instance_name': 'my-wazo',
+    'nestbox_engine_host': 'wazo.example.com',
+    'nestbox_engine_port': 443,
+}
+client.setup.create(body)
+```
+
 ## Debian package
 
 Follow the following steps to build a debian package for wazo-setupd-client manually.
