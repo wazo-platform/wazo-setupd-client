@@ -3,7 +3,7 @@ Section: python
 Priority: optional
 Maintainer: Wazo Maintainers <dev@wazo.community>
 Build-Depends:
- debhelper (>= 9),
+ debhelper (>= 10),
  dh-python,
  python-all (>= 2.7),
  python-setuptools,
