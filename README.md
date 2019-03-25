@@ -29,10 +29,7 @@ client.status.get()
 
 ```python
 body = {
-    'engine_entity_name': 'Wazo',
     'engine_language': 'en_US',
-    'engine_number_start': '1000',
-    'engine_number_end': '1999',
     'engine_password': 'secret',
     'nestbox_host': 'nestbox.example.com',
     'nestbox_port': 443,
