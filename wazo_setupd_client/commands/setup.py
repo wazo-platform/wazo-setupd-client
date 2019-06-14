@@ -13,9 +13,6 @@ class SetupCommand(SetupdCommand):
     _headers = {'Content-Type': 'application/json',
                 'Accept': 'application/json'}
 
-    def create(self, body, timeout=None):
-        args = {'timeout': DEFAULT_TIMEOUT}
-        if timeout is not None:
-            args['timeout'] = timeout
-        r = self.session.post(self.base_url, json=body, headers=self._headers, **args)
+    def create(self, body, timeout=DEFAULT_TIMEOUT):
+        r = self.session.post(self.base_url, json=body, headers=self._headers, timeout=timeout)
         self.raise_from_response(r)
