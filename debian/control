@@ -19,7 +19,7 @@ Section: python
 Depends:
  ${python:Depends},
  ${misc:Depends},
- xivo-lib-rest-client,
+ wazo-lib-rest-client,
  python-requests,
  python-stevedore
 Description: wazo-setupd client library - Python 2
@@ -32,7 +32,7 @@ Section: python
 Depends:
  ${python3:Depends},
  ${misc:Depends},
- xivo-lib-rest-client-python3,
+ wazo-lib-rest-client-python3,
  python3-requests,
  python3-stevedore
 Description: wazo-setupd client library - Python 3
