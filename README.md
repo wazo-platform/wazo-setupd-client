@@ -28,6 +28,9 @@ client.status.get()
 ### Setup the Wazo engine
 
 ```python
+client.setup.get()
+{'configured': False, 'provd_ready': True}
+
 body = {
     'engine_language': 'en_US',
     'engine_password': 'secret',
