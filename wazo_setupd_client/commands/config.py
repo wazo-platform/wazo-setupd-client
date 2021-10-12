@@ -1,17 +1,16 @@
 # -*- coding: utf-8 -*-
-# Copyright 2018-2019 The Wazo Authors  (see the AUTHORS file)
+# Copyright 2018-2021 The Wazo Authors  (see the AUTHORS file)
 # SPDX-License-Identifier: GPL-3.0-or-later
 
+from ..command import SetupdCommand
 
-from wazo_lib_rest_client import RESTCommand
 
-
-class ConfigCommand(RESTCommand):
+class ConfigCommand(SetupdCommand):
 
     resource = 'config'
-    _headers = {'Accept': 'application/json'}
 
     def get(self):
-        r = self.session.get(self.base_url, headers=self._headers)
+        headers = self._get_headers()
+        r = self.session.get(self.base_url, headers=headers)
         self.raise_from_response(r)
         return r.json()
