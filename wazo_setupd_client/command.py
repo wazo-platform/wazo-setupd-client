@@ -1,12 +1,14 @@
-# Copyright 2018-2022 The Wazo Authors  (see the AUTHORS file)
+# Copyright 2018-2023 The Wazo Authors  (see the AUTHORS file)
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 from wazo_lib_rest_client.command import RESTCommand
 
-from .exceptions import SetupdError
-from .exceptions import SetupdSetupError
-from .exceptions import SetupdServiceUnavailable
-from .exceptions import InvalidSetupdError
+from .exceptions import (
+    InvalidSetupdError,
+    SetupdError,
+    SetupdServiceUnavailable,
+    SetupdSetupError,
+)
 
 
 class SetupdCommand(RESTCommand):
